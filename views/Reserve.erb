@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Reservations</title>
+	<style>
+	body { 
+     background: url('hotel.jpg') no-repeat center center fixed;    
+     background-size:cover;
+  }
+  </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="Home">The Hotel Libertà</a>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="container">
+
+      <div class="starter-template">
+        <form method="POST" action="/Reserve">
+        <h1>Reserve</h1>
+        <p class="lead">Your stay with us will be both magical and unrealistic.</p>
+		<label for="last">Last Name:</label> 
+		<input type="text" name="last">
+    <label for="first">First Name:</label> 
+    <input type="text" name="first">
+		<br>
+    <label for="p">Contact Number:</label> 
+    <input type="text" name="p">
+    <br>
+    <label for="email">Email Address:</label> 
+    <input type="text" name="email">
+    <br>
+		<label for="l">Type of room: </label>
+		<select name="room">
+		<option value="Regular">Regular</option>
+		<option value="Double">Double</option>
+		<option value="Family">Family</option>
+		<option value="Party">Party</option>
+		</select> 
+    <br>
+		<label for="date">Date:</label> 
+		<input type="date" name="date">
+    <br>
+    <input type="submit" class="btn btn-default btn-lg">Reserve</input>
+  </form>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
